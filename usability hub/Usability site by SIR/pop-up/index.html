@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POp up Log in</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #popup {
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            /* opacity: 0; */
+            transform: translate(-50%,-50%) scale(1.25);
+            width: 300px;
+            box-shadow: 1px 2px 400px 300px rgba(0, 0, 0, 0.347);
+            /* height: 320px; */
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 15px;
+            transition: top 0ms ease-in-out 200ms,
+                        opacity 200ms ease-in-out 0ms,
+                        transform 20ms ease-in-out 0ms;
+        }
+        #popup.active{
+            top: 50%;
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1);
+            transition: top 0ms ease-in-out 0ms,
+                        opacity 200ms ease-in-out 0ms,
+                        transform 20ms ease-in-out 0ms;
+        }
+        #popup h2 {
+            text-align: center;
+            font-size: 2.0rem;
+            margin-bottom: 20px;
+        }
+        #form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+       
+        .close-btn{
+            font-size: 0.8rem;
+            position:absolute;
+            left: 90%;
+            top: 3%;
+            border: 1px solid black;
+            padding: 0 5px;
+            border-radius: 7px;
+        }
+        .input-form i {
+            font-size: 1.6rem;
+            margin-right: 5px;
+        }
+
+        .input-form input {
+            padding: 5px 10px 2px 5px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px solid gray;
+            transition: border-color 0.3s ease-in-out;
+            margin-block: 10px;
+            outline: none;
+            border-radius: 5px;
+            /* background-color: #f0f0f0; */
+        }
+
+        input:focus {
+            /* background-color: white;
+            box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); */
+            border-bottom: 2px solid blue;
+        }
+
+        .input-form input::placeholder {
+            font-size: 1.05rem;
+        }
+
+        #Login {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            /* border-radius: 5px; */
+            margin-block: 20px;
+
+        }
+
+        #Login button {
+            border-radius: 5px;
+            padding: 5px 80px;
+            font-size: 1.2rem;
+            border: none;
+            border-bottom: 2px solid gray;
+        }
+
+        button:hover {
+            /* background-color: white; */
+            box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+            border-bottom: 2px solid blue;
+        }
+
+        #Login button:hover {
+            cursor: pointer;
+        }
+
+        #remember {
+            font-size: 1.1rem;
+            align-items: start;
+            height: 20px;
+            width: 220px;
+            border: 2px solid rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="popup">
+        <div class="close-btn">&times;</div>
+        <h2>Log in</h2>
+        <form action="" id="form">
+            <div class="input-form">
+                <i class="ri-user-6-line"></i>
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="input-form">
+                <i class="ri-lock-2-line"></i>
+                <input type="password" name="pass" placeholder="Password">
+            </div>
+            <div id="Login">
+                <button type="submit">Sign in</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

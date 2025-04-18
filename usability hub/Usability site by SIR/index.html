@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usablity</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+    <!-- top-banner -->
+    <div class="top-banner">
+        <div class="small-bold-text banner-text container">
+            New to Usability Hub: Open and Closed card sorting
+        </div>
+    </div>
+
+    <!-- NAV BAR -->
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#Company logo" class="company-logo">
+                <img src="./assets/asset 2.png" alt="Company-logo">
+            </a>
+
+            <div class="nav-links" id="nav-link">
+                <ul class="flex">
+                    <li><a href="#" class="hover-link">Product</a></li>
+                    <li><a href="#" class="hover-link">Customer</a></li>
+                    <li><a href="#" class="hover-link">Pricing</a></li>
+                    <li><a href="#" class="hover-link">Resources</a></li>
+                    <li><a href="#" class="hover-link secondary-buttom" id="show-login">Log in</a></li>
+                    <li><a href="#" class="hover-link primary-buttom ">Sign up</a></li>
+                    <li><button id="toggle-dark-mode"><i class="fas fa-moon"></i></button></li>
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-duotone fa-solid fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+    <!-- HEADER -->
+    <header class="container flex header-section">
+        <div class="left-head">
+            <h1>Design confidently</h1>
+            <p>Usability is a remote user research platform that takes the guesswork out of design decisions by
+                validating them with real users.</p>
+            <a class="primary-buttom get-start-btm" href="#get started">GET STARTED</a>
+        </div>
+        <div class="right-head">
+            <img src="./assets/asset_3-removebg-preview.png" alt="">
+        </div>
+    </header>
+
+    <!-- COMPANIES  SECTION -->
+    <section class="companies-section container">
+        <div class="companies-header small-bold-text">
+            The world's best companies rely on UsabilityHub to make better design decisions.
+        </div>
+        <div class="logos flex">
+            <img src="./assets/asset 4.png" alt="">
+            <img src="./assets/asset 5.png" alt="">
+            <img src="./assets/asset 6.svg" alt="">
+            <img src="./assets/asset 7.png" alt="">
+            <img src="./assets/asset 8.png" alt="">
+            <img src="./assets/asset 9.png" alt="">
+            <img src="./assets/asset 10.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- POP UP LOG-IN -->
+
+    <div id="popup" class="popupcss">
+        <div class="close-btn">&times;</div>
+        <h2>Log in</h2>
+        <form id="form">
+            <div class="input-form">
+                <i class="ri-user-6-line"></i>
+                <input type="text" name="username" placeholder="Username">
+            </div>
+            <div class="input-form">
+                <i class="ri-lock-2-line"></i>
+                <input type="password" name="pass" placeholder="Password">
+            </div>
+            <div id="Login">
+                <button type="submit">Sign in</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- POP UP ENDS -->
+
+    <!-- POP UP SIGN UP -->
+    <div class="popup-ac">
+        <div class="close-btn-ac">&times;</div>
+        <h2>Create Account</h2>
+        <form class="form">
+            <div class="input-form">
+                <i class="fa-regular fa-address-card"></i>
+                <input type="text" placeholder="Enter Name">
+            </div>
+            <div class="input-form">
+                <i class="fa-solid fa-at"></i>
+                <input type="email" placeholder="Enter Email">
+            </div>
+            <div class="input-form">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="Create Username">
+            </div>
+            <div class="input-form">
+                <i class="ri-lock-2-line"></i>
+                <input type="password" placeholder="Create Password">
+            </div>
+            <div id="create-ac">
+                <button type="submit">Create Account</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- POP UP SIGN UP -->
+
+    <!-- FEATURES SECTION -->
+    <section class="features-secton">
+        <div class="container">
+            <div class="features-header">
+                <h2>Your user research Swiss Army knife</h2>
+                <a class="secondary-buttom" href="#See all Features">See all Features <i
+                        class="fa-solid fa-right-long"></i></a>
+
+            </div>
+            <div class="features-area flex">
+                <div class="features-card flex">
+                    <img src="./assets/asset 11.svg" alt="">
+                    <h3>Card Sorting</h3>
+                    <p>Discover how people group and label information.</p>
+                    <a class="secondary-buttom" href="#Learn More">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./assets/asset 12.svg" alt="">
+                    <h3>Prototype tests</h3>
+                    <p>Discover How people navigate your Figma prototypes.</p>
+                    <a class="secondary-buttom" href="#Learn More">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./assets/asset 13.svg" alt="">
+                    <h3>First click tests</h3>
+                    <p>Test interaction with first click and navigation tests.</p>
+                    <a class="secondary-buttom" href="#Learn More">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./assets/asset 14.svg" alt="">
+                    <h3>Design surveys</h3>
+                    <p>Get feedback on image, videos or audio files.</p>
+                    <a class="secondary-buttom" href="#Learn More">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./assets/asset 15.svg" alt="">
+                    <h3>Preference tests</h3>
+                    <p>Find out which design users prefer and why.</p>
+                    <a class="secondary-buttom" href="#Learn More">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+                <div class="features-card flex">
+                    <img src="./assets/asset 16.svg" alt="">
+                    <h3>Five second tests</h3>
+                    <p>Test comprehensibility by measuring first impressions.</p>
+                    <a class="secondary-buttom" href="#Learn More">Learn More <i class="fa-solid fa-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Big Features section -->
+    <!-- 1ST -->
+    <section class="big-feature-section container flex">
+        <div class="left-section">
+            <img src="./assets/asset 17.png" alt="">
+        </div>
+        <div class="right-section">
+            <p>Effortless validation for</p>
+            <h2>Design Professionals</h2>
+            <p>Test interfaces, interaction flows, iconography and more, to help you create intuitive and delightful
+                experiences for your users.</p>
+            <img src="./assets/asset 18.png" class="margin2" alt="">
+            <div class="invert">
+                <p class="margin">The navigation test is god's gift to UI designers, it probably has the best
+                    power-to-simplicity ratio
+                    of any software, ever.</p>
+                <img src="./assets/asset 19.png" class="profile" alt="">
+                <p>Nick Franklin</p>
+                <p>Chief Executive Officer</p>
+            </div>
+        </div>
+    </section>
+    <!-- 2ND BIG FEATURE SECTION -->
+    <section class="big-feature-section container flex" id="second-big-feature">
+        <div class="right-section">
+            <p>Optimisation for</p>
+            <h2>Marketers</h2>
+            <p>Fine-tune landing pages, messaging, and creative, helping you optimise conversion rates on marketing
+                campaigns and product launches.</p>
+            <img src="./assets/asset 20.png" class="margin2" alt="">
+            <div class="invert">
+                <p class="margin">We use UsabilityHub tests to help us make decisions for various projects. From web and
+                    mobile design to marketing activities.</p>
+                <img src="./assets/asset 21.png" class="profile" alt="">
+                <p>Rick van de Ven</p>
+                <p>Digital Marketing Analyst</p>
+            </div>
+        </div>
+        <div class="left-section">
+            <img src="./assets/asset 22.png" alt="">
+        </div>
+    </section>
+    <!-- 3RD BIG FEATURE SECTION -->
+    <section class="big-feature-section container flex">
+        <div class="left-section">
+            <img src="./assets/asset 23.png" alt="">
+        </div>
+        <div class="right-section">
+            <p>Easier decision making for</p>
+            <h2>Product Managers</h2>
+            <p>Ensure you’re delivering the right features to the right customers by validating product concepts with
+                your target audience.</p>
+            <img src="./assets/asset 24.png" class="margin2" alt="">
+            <div class="invert">
+                <p class="margin">Adopting UsabilityHub got us into the habit of asking our users questions before
+                    locking in decisions.</p>
+                <img src="./assets/asset 25.png" class="profile" alt="">
+                <p>Ron Diorio</p>
+                <p>VP Innovation & New Products</p>
+            </div>
+        </div>
+    </section>
+    <!-- EXAMPLE - SECTION -->
+    <section class="example-section">
+        <div class="container">
+            <div class="examples-header flex">
+                <h2>One platform, endless possibilities</h2>
+                <a class="secondary-buttom" href="#See More Examples">See More Examples <i
+                        class="fa-solid fa-right-long"></i></a>
+            </div>
+            <div class="examples-area flex">
+                <a href="#" class="examples-card img1">
+                    <h3 class="card-text">Can users complete task in my software interface?</h3>
+                </a>
+                <a href="#" class="examples-card img2">
+                    <h3 class="card-text">Can users find important pages on my website?</h3>
+                </a>
+                <a href="#" class="examples-card img3">
+                    <h3 class="card-text">is my website's intended audience clear?</h3>
+                </a>
+                <a href="#" class="examples-card img4">
+                    <h3 class="card-text">Do vistitors understand what a page is about?</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUSINESS SECTION  -->
+    <section class="business-section">
+        <div class="business-section-container container flex">
+            <div class="left-business-section flex">
+                <div class="heading-tag">
+                    <h2>No participants?</h2>
+                    <h2>No problem.</h2>
+                </div>
+                <p>Our integrated panel allows you to quickly and affordably recruit research participants that
+                    precisely match your target audience.</p>
+                <h3>Our panel includes:</h3>
+                <ul class="list">
+                    <li>530k+ panel participants</li>
+                    <li>Coverage in 100+ countries</li>
+                    <li>35+ demographic options</li>
+                    <li>Average 2hr turn around time</li>
+                    <li>Free demographic testing</li>
+                    <li>Response quality guarantee</li>
+                </ul>
+                <div class="business-section-btm flex">
+                    <a href="#" class="primary-buttom">Try the panel calculator</a>
+                    <p>Or</p>
+                    <a href="#Learn More" class="secondary-buttom">Learn More</a>
+                </div>
+            </div>
+            <div class="right-section-img">
+                <img src="./assets/asset 40.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 
+    <section class="cta-section -->
+    <section class="cta-section">
+        <div class="cta-section-cotainer flex container">
+            <h2>Start testing today</h2>
+            <p>Take the guesswork out of design decisions</p>
+            <a href="#" class="primary-buttom">Get Started</a>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="container flex footer-section">
+            <a href="#" class="company-logo">
+                <img src="./assets/asset 2.png" alt="">
+            </a>
+            <div class="link-column flex">
+                <h3>Product</h3>
+                <a href="#" class="hover-link">Overview</a>
+                <a href="#" class="hover-link">Pricing</a>
+                <a href="#" class="hover-link">Research panel</a>
+                <a href="#" class="hover-link">Customers</a>
+                <a href="#" class="hover-link">Status page</a>
+                <a href="#" class="hover-link">Status page</a>
+                <a href="#" class="hover-link">Sign up</a>
+                <a href="#" class="hover-link">Book a demo</a>
+            </div>
+
+            <div class="link-column flex">
+                <h3>Card sorting</h3>
+                <a href="#" class="hover-link">Prototype testing</a>
+                <a href="#" class="hover-link">First click tests</a>
+                <a href="#" class="hover-link">Preference tests</a>
+                <a href="#" class="hover-link">Five second tests</a>
+                <a href="#" class="hover-link">Design surveys</a>
+            </div>
+
+            <div class="link-column flex">
+                <h3>Resources</h3>
+                <a href="#" class="hover-link">Blog</a>
+                <a href="#" class="hover-link">Testing guides</a>
+                <a href="#" class="hover-link">Help center</a>
+                <a href="#" class="hover-link">Contact</a>
+                <a href="#" class="hover-link">Careers</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SUB-FOOTER -->
+    <section class="sub-footer-section">
+        <div class="subfooter-container container flex">
+            <a href="#" class="hover-link">Privacy Policy</a>
+            <a href="#" class="hover-link">Terms & Conditions</a>
+            <a href="#" class="hover-link">Security information</a>
+
+            <a href="#" class="hover-link"><img src="./assets/asset 31.png" alt=""></a>
+            <a href="#" class="hover-link"><img src="./assets/asset 32.png" alt=""></a>
+            <a href="#" class="hover-link"><img src="./assets/asset 33.png" alt=""></a>
+            <a href="#" class="hover-link"><img src="./assets/asset 34.png" alt=""></a>
+        </div>
+    </section>
+
+
+    <!-- <script src="https://kit.fontawesome.com/8134ddd51a.js" crossorigin="anonymous"></script> -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8134ddd51a.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
